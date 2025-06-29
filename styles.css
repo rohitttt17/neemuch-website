@@ -317,8 +317,7 @@ footer {
   }
 }
 .hero {
-  background: url('railway.jpg') no-repeat center center;
-  background-size: cover;
+  background: url('railway.jpg') no-repeat center center / cover;
   height: 70vh;
   display: flex;
   align-items: center;
@@ -326,15 +325,14 @@ footer {
   color: white;
   text-align: center;
   position: relative;
-  background-attachment: scroll; /* Prevent zooming issue on mobile */
+  background-attachment: fixed;
 }
 
+/* Mobile-specific fix */
 @media (max-width: 768px) {
   .hero {
-    background-size: contain;       /* Make sure the whole image is visible */
-    background-repeat: no-repeat;
-    background-position: top center;
-    height: auto;                   /* Let it adjust based on image height */
-    padding: 50px 20px;             /* Optional spacing for content inside */
+    background-attachment: scroll; /* Prevent zoomy parallax issue */
+    height: 50vh; /* Reduce height on mobile to reduce cropping */
+    background-position: center top; /* Keep top visible */
   }
 }
