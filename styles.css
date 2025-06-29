@@ -92,17 +92,7 @@ h1, h2, h3 {
 }
 
 /* ========== HERO ========== */
-.hero {
-  background: url('railway.jpg') no-repeat center center/cover;
-  height: 70vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-align: center;
-  position: relative;
-  background-attachment: fixed;
-}
+
 
 .hero .overlay {
   background: rgba(0, 0, 0, 0.5);
