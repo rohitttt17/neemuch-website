@@ -1,0 +1,279 @@
+/* ========== GENERAL RESET ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  
+  padding-top: 100px; /* To accommodate fixed navbar */
+}
+
+h1, h2, h3 {
+  color: #222;
+}
+/* Navbar container */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  
+  animation: slideDown 0.7s ease-in-out;
+}
+
+
+/* Logo */
+.nav-logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #1e1e2f;
+}
+
+/* Nav links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #1e1e2f;
+  font-weight: 500;
+  font-size: 1.05rem;
+  padding: 6px 10px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.nav-links li a:hover {
+  
+  color: #007aff;
+}
+
+/* Optional icons */
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-icons i {
+  font-size: 1.1rem;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-icons i:hover {
+  color: #007aff;
+}
+
+/* ========== TAGLINE ========== */
+.tagline {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #2e7d32;
+  margin-top: 10px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* ========== HERO ========== */
+.hero {
+  background: url('../images/Neemuch_Railway_station.jpg') no-repeat center center/cover;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.hero .overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+#searchBar {
+  padding: 12px;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+}
+
+/* ========== CATEGORIES ========== */
+.categories {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.categories h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.category-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.category-button {
+  padding: 14px 24px;
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: white;
+  color: #007bff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.category-button:hover {
+  background-color: #007bff;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* ========== ABOUT CITY / NATURE SECTION ========== */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px 10%;
+  gap: 40px;
+}
+
+.container .content {
+  flex: 1 1 400px;
+}
+
+.container .content h1 {
+  font-size: 2rem;
+  color: #2e7d32;
+  margin-bottom: 15px;
+}
+
+.container .content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+.image {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 128, 0, 0.2);
+}
+
+/* ========== FEATURED LISTINGS ========== */
+.listings {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.listings h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #f1f1f1;
+  padding: 25px;
+  border-radius: 12px;
+  width: 250px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20p
+}
+.updates-section {
+  background: #f9f9f9;
+  padding: 30px 20px;
+  margin-top: 40px;
+  border-top: 2px solid #ddd;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.updates-section h2 {
+  color: #333;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.updates-section p {
+  font-size: 16px;
+  margin: 8px 0;
+  line-height: 1.6;
+  color: #555;
+}
+
+.contact-box {
+  background: #fff;
+  border: 1px solid #ddd;
+  display: inline-block;
+  padding: 15px 25px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-size: 16px;
+  color: #444;
+}
+/* FOOTER */
+footer {
+  background-color: #3b7cd5;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 14px;
+  margin-top: 30px;
+}

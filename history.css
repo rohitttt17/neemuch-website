@@ -1,0 +1,193 @@
+/* ========== HISTORY PAGE STYLES ========== */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  body {
+    background-color: #f4f7f9;
+    color: #333;
+    padding-top: 100px;
+  }
+  
+  /* Navbar container */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  
+  animation: slideDown 0.7s ease-in-out;
+}
+
+
+/* Logo */
+.nav-logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #1e1e2f;
+}
+
+/* Nav links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #1e1e2f;
+  font-weight: 500;
+  font-size: 1.05rem;
+  padding: 6px 10px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.nav-links li a:hover {
+  
+  color: #007aff;
+}
+
+/* Optional icons */
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-icons i {
+  font-size: 1.1rem;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-icons i:hover {
+  color: #007aff;
+}
+
+  /* History Section */
+  .history-section {
+    padding: 60px 10%;
+    background-color: #ffffff;
+  }
+  
+  .history-section h1 {
+    text-align: center;
+    color: #2e7d32;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+  }
+  
+  .history-section > p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+    color: #444;
+  }
+  
+  /* History Blocks */
+  .history-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .history-block.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .history-block .text {
+    flex: 1 1 400px;
+  }
+  
+  .history-block .text h2 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #007bff;
+  }
+  
+  .history-block .text p {
+    font-size: 1.05rem;
+    color: #555;
+    line-height: 1.7;
+  }
+  
+  .history-block .image {
+    flex: 1 1 400px;
+    text-align: center;
+  }
+  
+  .history-block .image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+  }
+  
+  .history-block .image img:hover {
+    transform: scale(1.03);
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: #fff;
+    font-size: 0.95rem;
+  }
+  
+  /* Animation */
+  .fade-in {
+    animation: fadeIn 1.2s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .history-block {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 12px;
+      align-items: flex-start;
+    }
+  
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
