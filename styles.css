@@ -326,11 +326,9 @@ footer {
     display: flex;
   }
 }
+/* Default for desktop/laptop */
 .hero {
-  background-image: url('railway.jpg');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  background: url('railway.jpg') no-repeat center center/cover;
   height: 70vh;
   display: flex;
   align-items: center;
@@ -341,11 +339,15 @@ footer {
   background-attachment: fixed;
 }
 
+/* Fix for mobile */
 @media (max-width: 768px) {
   .hero {
-    background-size: contain;
-    background-attachment: scroll;
+    background-size: contain;       /* instead of cover */
     background-position: center top;
-    height: 50vh;
+    background-repeat: no-repeat;
+    background-attachment: scroll;  /* Fixes jitter on mobile */
+    height: auto;                   /* auto height for full image */
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
