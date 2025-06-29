@@ -326,3 +326,11 @@ footer {
     display: flex;
   }
 }
+@media (max-width: 768px) {
+  .hero {
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 50vh; /* Adjust height as needed */
+  }
+}
